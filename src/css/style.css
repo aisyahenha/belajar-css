@@ -1,0 +1,26 @@
+body {
+  font-family: lucida sans;
+  color: #42855B;
+  background-color: #FFD39A; }
+
+#paragraph {
+  color: #9C9EFE; }
+
+.center {
+  text-align: center; }
+
+.large {
+  font-size: 5rem; }
+
+h2.large {
+  font-size: 3rem; }
+
+div img {
+  margin-top: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; }
+
+h1 > span {
+  color: red; }

@@ -1,0 +1,38 @@
+$font-custom : lucida sans;
+$primary-color: #42855B;
+$secondary-color:#FFD39A; 
+$purple-color:#9C9EFE;
+$red-color: red;
+
+//simple selector tag
+body{
+    font-family: $font-custom;
+    color:  $primary-color;
+    background-color: $secondary-color;
+}
+#paragraph{
+    color: $purple-color
+
+}
+.center{
+    text-align: center;
+}
+
+.large{
+    font-size: 5rem;
+}
+h2.large{
+    font-size: 3rem;
+}
+//css combinator descended (space)
+div img{
+    margin-top: auto;
+    display: block; //make display has break to buttom
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+//css combinator child
+h1>span{
+    color: $red-color;
+}
