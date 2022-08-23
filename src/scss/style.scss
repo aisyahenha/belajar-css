@@ -1,38 +1,52 @@
-$font-custom : lucida sans;
-$primary-color: #42855B;
-$secondary-color:#FFD39A; 
-$purple-color:#9C9EFE;
+$font-custom: lucida sans;
+$primary-color: #42855b;
+$secondary-color: #ffd39a;
+$purple-color: #9c9efe;
 $red-color: red;
+$top-margin: auto;
 
 //simple selector tag
-body{
-    font-family: $font-custom;
-    color:  $primary-color;
-    background-color: $secondary-color;
+body {
+  font-family: $font-custom;
+  color: $primary-color;
+  background-color: $secondary-color;
 }
-#paragraph{
-    color: $purple-color
+#paragraph {
+  color: $purple-color;
+}
+.center {
+  text-align: center;
+}
 
+.large {
+  font-size: 5rem;
 }
-.center{
-    text-align: center;
-}
-
-.large{
-    font-size: 5rem;
-}
-h2.large{
-    font-size: 3rem;
+h2.large {
+  font-size: 3rem;
 }
 //css combinator descended (space)
-div img{
-    margin-top: auto;
-    display: block; //make display has break to buttom
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+//descended can apply for the element inside it as descended
+//but if want to spasific child can use combinator
+.all-img img {
+  margin-top: $top-margin; //$top-margin;
+  display: block; //make display has break to buttom
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 30%;
+  padding-top: 20px;
 }
+
 //css combinator child
-h1>span{
-    color: $red-color;
+h1 > span {
+  color: $red-color;
+}
+
+// using + ~ 
+.navbar ul li{
+   list-style: none;
+}
+.logo{
+    float: left;
+    font-size: 20;
 }
